@@ -1,0 +1,38 @@
+$bg-small-active: #E94E00;
+$bg-small-hover: lighten($bg-small-active, 4.3%);
+$bg-small-disabled: lighten($bg-small-active, 27.3%);
+
+
+@mixin small {
+  background-color: $bg-small-disabled;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: none;
+  padding: 0.4rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  
+  &:hover{
+    background-color: $bg-small-hover;
+  }
+  &:active{
+    background-color: $bg-small-active;
+  }
+}
+
+.increase {
+  @include small;
+  background-image: url('./plus.svg');
+}
+
+.decrease {
+  @include small;
+  background-image: url('./minus.svg');
+}
