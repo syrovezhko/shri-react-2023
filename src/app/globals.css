@@ -13,3 +13,9 @@ body {
   overflow-x: hidden;
   font-size: 10px;
 }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./../fonts/Roboto-Regular.ttf);
+  font-weight: 400;
+ }
