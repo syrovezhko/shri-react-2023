@@ -4,10 +4,19 @@ interface IButton {
 	type: string;
   text: string;
 }
+/*
+button doc: 
+    type: primary, text: some string
+    type: secondary, text: some string
+    type: increase, text: empty string
+    type: decrease, text: empty string
+*/
 
 const Button: FC<IButton> = ({type, text}) => {
   return (
-    <button className={styles[type]}/>
+    <button className={styles[type]}>
+      {text}
+    </button>
   );
 };
 

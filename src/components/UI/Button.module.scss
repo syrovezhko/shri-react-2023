@@ -1,11 +1,11 @@
-$bg-small-active: #E94E00;
-$bg-small-hover: lighten($bg-small-active, 4.3%);
-$bg-small-disabled: lighten($bg-small-active, 27.3%);
+$bg-active: #E94E00;
+$bg-hover: lighten($bg-active, 4.3%);
+$bg-disabled: lighten($bg-active, 27.3%);
+$light: #FFFFFF;
 
 
 @mixin small {
-  background-color: $bg-small-disabled;
-  color: #FFFFFF;
+  background-color: $bg-disabled;
   font-weight: bold;
   border: none;
   padding: 0.4rem;
@@ -20,11 +20,31 @@ $bg-small-disabled: lighten($bg-small-active, 27.3%);
   cursor: pointer;
   
   &:hover{
-    background-color: $bg-small-hover;
+    background-color: $bg-hover;
   }
   &:active{
-    background-color: $bg-small-active;
+    background-color: $bg-active;
   }
+}
+
+@mixin big {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  padding: 1.0rem 1.6rem;
+  background: transparent;
+  color: $bg-hover;
+  border: 1px solid $bg-hover;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  
+  &:hover {
+    border-color: $bg-active;
+    color: $bg-hover;
+  }
+  
 }
 
 .increase {
@@ -35,4 +55,19 @@ $bg-small-disabled: lighten($bg-small-active, 27.3%);
 .decrease {
   @include small;
   background-image: url('./minus.svg');
+}
+
+.primary {
+  @include big;
+  background: $bg-hover;
+  color: $light;
+  
+  &:hover {
+    background: $bg-active;
+    color: $light;
+  }
+}
+
+.secondary{
+  @include big
 }
