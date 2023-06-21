@@ -1,7 +1,4 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['cyrillic'] })
 
 export const metadata = {
   title: 'Домашнее задание "Реакт"',
@@ -15,7 +12,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body className={inter.className}>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
