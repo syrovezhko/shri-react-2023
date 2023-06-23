@@ -1,0 +1,57 @@
+.block {
+  border-radius: 8px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 24px;
+}
+
+@mixin headling {
+  color: #1B1F23;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.declaration {
+  @include headling;
+}
+
+.question {
+  @include headling;
+  font-size: 24px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@mixin img {
+  cursor: pointer;
+  fill: currentColor;
+  filter: invert(62%) sepia(12%) saturate(182%) hue-rotate(172deg) brightness(99%) contrast(88%);
+}
+
+.nonActive{
+  @include img;
+}
+
+.active {
+  @include img;
+  transform: rotate(180deg);
+}
+
+.titile {}
+
+.text {
+  color: #1B1F23;
+  font-size: 16px;
+  font-family: Roboto;
+  line-height: 24px;
+  margin-top: 1.6rem;
+}
