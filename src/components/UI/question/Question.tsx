@@ -16,9 +16,9 @@ const Question: FC<IQuestion> = ({type, title, text}) => {
     <div className={styles.block}>
       <div className={styles.line}>
         <h2 className={heading}>{title}</h2>
-        {type !== 'declaration' && <Image onClick={() => {setIsOpen(!isOpen)}} className={arrow} src='/arrow.svg' width={20} height={20} alt="arrow"/>}
+        {type !== 'declaration' && type !== 'about' && <Image onClick={() => {setIsOpen(!isOpen)}} className={arrow} src='/arrow.svg' width={20} height={20} alt="arrow"/>}
       </div>
-      {isOpen && type !== 'declaration' && <p className={styles.text}>{text}</p>}
+      {(isOpen || type === 'about') && type !== 'declaration' && <p className={styles.text}>{text}</p>}
     </div>
   );
 };
