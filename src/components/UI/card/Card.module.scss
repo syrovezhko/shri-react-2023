@@ -1,0 +1,60 @@
+$text-primary: #1B1F23;
+
+.card {
+  border-radius: 0.8rem;
+  display: flex;
+  width: 100%;
+  padding: 2.4rem;
+  align-items: flex-start;
+  gap: 2.4rem;
+  cursor: pointer;
+  &:hover {
+    background: #FFF;
+  }
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: var(--text-primary, $text-primary);
+  font-size: 2rem;
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  line-height: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.genre {
+  color: var(--text-primary, $text-primary);
+  font-size: 1.6rem;
+  font-family: 'SF Pro Text';
+  font-style: italic;
+  line-height: 2rem;
+}
+
+.control {
+  display: flex;
+}
+
+.count {
+  color:  $text-primary;
+  font-size: 2rem;
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  line-height: 2rem;
+  margin: 0 0.8rem;
+}
+
+.close {
+  margin-left: 2.4rem;
+  cursor: pointer;
+}
