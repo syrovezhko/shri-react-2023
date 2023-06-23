@@ -3,6 +3,7 @@ import styles from './Button.module.scss'
 interface IButton {
 	type: string;
   text?: string;
+  onClick?:()=>void;
 }
 /*
 button doc: 
