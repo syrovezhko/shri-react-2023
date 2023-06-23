@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from './Button.module.scss'
 interface IButton {
 	type: string;
-  text: string;
+  text?: string;
 }
 /*
 button doc: 
