@@ -1,0 +1,20 @@
+.block {
+
+}
+
+.title {
+  font-size: 14px;
+  font-family: 'SF Pro Text';
+  line-height: 20px;
+  color: #1B1F23;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  &__mark {
+    color: #F04075;
+    margin-left: 4px;
+    &_icon {
+      cursor: pointer;
+    }
+  }
+}

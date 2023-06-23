@@ -7,15 +7,16 @@ import Image from 'next/image'
 
 interface IInput {
   placeholder: string;
+  isList: boolean;
 }
 
-const Input: FC<IInput> = ({placeholder}) => {
+const Input: FC<IInput> = ({placeholder, isList=true}) => {
   const [isOpen, setIsOpen] = useState(()=>{return false});
   let arrow = isOpen ? styles.active : styles.nonActive;
   return (
     <form className={styles.form}>
       <input className={styles.input} placeholder={placeholder}/>
-      <Image onClick={() => {setIsOpen(!isOpen)}} className={arrow} src='/arrow.svg' width={20} height={20} alt="Picture of the author"/>
+      {isList && <Image onClick={() => {setIsOpen(!isOpen)}} className={arrow} src='/arrow.svg' width={20} height={20} alt="Picture of the author"/>}
     </form>
   );
 };
