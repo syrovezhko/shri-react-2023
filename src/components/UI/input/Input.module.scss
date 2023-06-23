@@ -1,0 +1,48 @@
+.form {
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #E1E3E6;
+  justify-content: space-between;
+  border-radius: 0.8rem;
+  max-width: 36rem;
+  width: 100%;
+  padding: 1rem 1.6rem;
+
+  &:focus-within{
+    border-color: #FF5500;
+    outline: none !important;
+  }
+}
+
+.input {
+  flex-grow:2;
+  border:none;
+  
+  &::placeholder {
+    font-size: 1.4rem;
+    font-family: 'SF Pro Text';
+    line-height: 2.0rem;
+    color: #999FA6;
+  }
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: #1B1F23;
+    }
+  }
+}
+
+@mixin img {
+  cursor: pointer;
+  fill: currentColor;
+  filter: invert(62%) sepia(12%) saturate(182%) hue-rotate(172deg) brightness(99%) contrast(88%);
+}
+
+.nonActive{
+  @include img;
+}
+
+.active {
+  @include img;
+  transform: rotate(180deg);
+}
