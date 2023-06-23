@@ -9,6 +9,7 @@ import Select from '../select/Select';
 interface IInput {
   placeholder: string;
   isList: boolean;
+  selected: string;
 }
 
 const Input: FC<IInput> = ({placeholder, isList=true}) => {

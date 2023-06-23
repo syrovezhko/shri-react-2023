@@ -2,11 +2,13 @@
 
 import { FC } from 'react';
 import styles from './Select.module.scss';
+import { HookCallbacks } from 'async_hooks';
 
 
-// interface ISelect {
-//   options: string[];
-// }
+interface ISelect {
+  selected: string;
+  setSelected: CallableFunction;
+}
 
 const Select: FC<ISelect> = ({selected, setSelected}) => {
   const options = [
@@ -21,9 +23,7 @@ const Select: FC<ISelect> = ({selected, setSelected}) => {
       {options.map(option => (
         <div className={styles.option} onClick={(e) => setSelected(option)} >{option}</div>
       ))}
-      {/* <div className={styles.option} onClick={(e) => setSelected(e.target.textContent)} >Fiat</div>
-      <div className={styles.option} onClick={(e) => setSelected(e.target.textContent)} >Audi</div> */}
-    </div>
+      </div>
   );
 };
 

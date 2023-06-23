@@ -19,7 +19,7 @@ const Seaarch: FC<ISeaarch> = ({title, placeholder}) => {
         {title}
         {title.toLowerCase() === 'название' && <Required/>}
         </p>
-      <Input placeholder={placeholder} isList={title.toLowerCase() !== 'название'}/>
+      <Input placeholder={placeholder} isList={title.toLowerCase() !== 'название'} selected={''}/>
     </div>
   );
 };
