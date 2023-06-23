@@ -1,0 +1,65 @@
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 2.4rem;
+  background: #FFF;
+  border-radius: 0.8rem;
+  width: 100%;
+}
+
+.picture {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #E0E0E0;
+  margin-right: 3.2rem;
+  &_data {
+    width: 100%;
+  }
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.name {
+  color: #1B1F23;
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.grade {
+  color: #1B1F23;
+  font-size: 20px;
+  font-family: 'Roboto';
+  line-height: 32px;
+  font-weight: 400;
+  &_value {
+    
+    font-weight: 600;
+  }
+}
+
+.text {
+  color:  #1B1F23;
+  font-size: 16px;
+  font-family: 'Roboto';
+  line-height: 24px;
+}
+

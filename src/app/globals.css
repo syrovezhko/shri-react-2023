@@ -21,6 +21,12 @@ body {
   font-weight: 400;
  }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url(./../fonts/Roboto-Medium.ttf);
+  font-weight: 600;
+}
+
  @font-face {
   font-family: 'SF Pro Text';
   src: url(./../fonts/SFProText-Regular.ttf);
