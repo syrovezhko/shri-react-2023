@@ -1,0 +1,19 @@
+.select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  margin-top: 4px;
+}
+
+.option {
+  width: 100%;
+  font-size: 14px;
+  font-family: 'SF Pro Text';
+  color: #1B1F23;
+  padding: 12px;
+  line-height: 20px;
+  cursor: pointer;
+}

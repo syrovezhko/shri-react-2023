@@ -14,7 +14,7 @@ export default function Home() {
       <Button type={'secondary'} text={'Нет'}/>
       <br/>
       <br/>
-      <Seaarch placeholder="Введите название" title='Название'/> 
+      <Seaarch placeholder="Введите название" title='Назание'/> 
     </div>
   );
 };
