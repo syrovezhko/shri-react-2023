@@ -3,10 +3,10 @@ import styles from './Header.module.scss';
 import Image from "next/image";
 
 interface IHeader {
-  inCart: number;
+  inCart?: number;
 }
 
-const Header: FC<IHeader> = ({inCart}) => {
+const Header: FC<IHeader> = ({inCart=0}) => {
   return (
     <header className={styles.header}>
       <h1 className={styles.title} >Билетопоиск</h1>
