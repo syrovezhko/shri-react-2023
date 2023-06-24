@@ -8,19 +8,24 @@ import Required from './required/Required';
 
 
 interface ISeaarch {
-  placeholder: string;
   title: string;
 }
 
-const Seaarch: FC<ISeaarch> = ({title, placeholder}) => {
+const Seaarch: FC<ISeaarch> = ({title}) => {
+  const placeholder = title.toLowerCase() === 'название'
+                      ? 'Введите название'
+                      : `Выберите ${title.toLowerCase()}`
   return (
-    <div className={styles.block}>
+    <>
       <p className={styles.title}>
         {title}
         {title.toLowerCase() === 'название' && <Required/>}
         </p>
-      <Input placeholder={placeholder} isList={title.toLowerCase() !== 'название'} selected={''}/>
-    </div>
+      <Input
+        placeholder={placeholder}
+        isList={title.toLowerCase() !== 'название'}
+        />
+    </>
   );
 };
 
