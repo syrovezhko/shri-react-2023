@@ -3,6 +3,7 @@ import { FC, useState } from "react";
 import styles from './Card.module.scss';
 import Image from 'next/image'
 import Button from "../button/Button";
+import Control from "../control/Control";
 
 interface ICard {
 	isCart?: boolean;
@@ -22,9 +23,7 @@ const Card: FC<ICard> = ({isCart=false, picture, title, genre}) => {
           <h3 className={styles.genre} >{genre}</h3>
         </div>
         <div className={styles.control}>
-          <Button onClick={()=>setCount(count-1)} type={'decrease'}/>
-          <h4 className={styles.count} >{count}</h4>
-          <Button onClick={()=>setCount(count+1)} type={'increase'}/>
+          <Control/>
           {isCart && <Image className={styles.close} src="/close.svg" width={20} height={20} alt="close"/>}
         </div>
       </div>
