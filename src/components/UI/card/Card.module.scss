@@ -8,10 +8,14 @@ $text-primary: #1B1F23;
   align-items: flex-start;
   gap: 2.4rem;
   background: #FFF;
-  cursor: pointer;
   &:hover {
     background: #F8F8F8;
   }
+}
+
+.picture {
+  
+  cursor: pointer;
 }
 
 .data {
@@ -32,6 +36,7 @@ $text-primary: #1B1F23;
   font-weight: 600;
   line-height: 2rem;
   margin-bottom: 0.8rem;
+  cursor: pointer;
 }
 
 .genre {

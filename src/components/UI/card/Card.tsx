@@ -4,6 +4,7 @@ import styles from './Card.module.scss';
 import Image from 'next/image'
 import Control from "../control/Control";
 import Modal from "../modal/Modal";
+import { useRouter } from "next/navigation";
 
 interface ICard {
 	isCart?: boolean;
@@ -13,14 +14,15 @@ interface ICard {
 }
 
 const Card: FC<ICard> = ({isCart=false, picture, title, genre}) => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
   return (
     <>
       <article className={styles.card}>
-        <Image src={picture} width={100} height={120} alt="Picture of the movie"/>
+        <Image className={styles.picture} onClick={() => router.push('/movie')} src={picture} width={100} height={120} alt="Picture of the movie"/>
         <div className={styles.data}>
           <div className={styles.info}>
-            <h2 className={styles.title} >{title}</h2>
+            <h2 onClick={() => router.push('/movie')} className={styles.title} >{title}</h2>
             <h3 className={styles.genre} >{genre}</h3>
           </div>
           <div className={styles.control}>
