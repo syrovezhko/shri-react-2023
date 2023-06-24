@@ -13,7 +13,6 @@ const Filter: FC<IFilter> = () => {
       <Seaarch title="Название"/>
       <Seaarch title="Жанр"/>
       <Seaarch title="Кинотеатр"/>
-
     </aside>
   );
 };
