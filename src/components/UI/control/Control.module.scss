@@ -1,0 +1,17 @@
+.control {
+  display: flex;
+  width: 6.8rem;
+  justify-content: space-between;
+}
+
+.button {
+  height: 2rem;
+}
+
+.value {
+  color:  #1B1F23;
+  font-size: 2rem;
+  font-family: 'SF Pro Text';
+  font-weight: 600;
+  line-height: 2rem;
+}
