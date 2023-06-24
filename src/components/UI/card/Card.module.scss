@@ -7,9 +7,10 @@ $text-primary: #1B1F23;
   padding: 2.4rem;
   align-items: flex-start;
   gap: 2.4rem;
+  background: #FFF;
   cursor: pointer;
   &:hover {
-    background: #FFF;
+    background: #F8F8F8;
   }
 }
 
