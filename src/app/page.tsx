@@ -5,10 +5,12 @@ import Card from "@/components/UI/card/Card";
 import Question from "@/components/UI/question/Question";
 import Revue from "@/components/UI/revue/Revue";
 import MovieCard from "@/components/UI/movieCard/MovieCard";
+import Header from "@/components/header/Header";
 
 export default function Home() {
   return (
     <div>
+      <Header inCart={10} />
       <Button type={'increase'}/>
       <br/>
       <Button type={'decrease'}/>
