@@ -13,6 +13,8 @@ body {
   overflow-x: hidden;
   font-size: 10px;
   background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
 }
 
 @font-face {

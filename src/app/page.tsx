@@ -6,11 +6,21 @@ import Question from "@/components/UI/question/Question";
 import Revue from "@/components/UI/revue/Revue";
 import MovieCard from "@/components/UI/movieCard/MovieCard";
 import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header inCart={10} />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div>
       <Button type={'increase'}/>
       <br/>
       <Button type={'decrease'}/>
@@ -24,6 +34,7 @@ export default function Home() {
       <Button type={'arrow'}/>
       <br/>
       <br/>
+      </div>
       <Seaarch placeholder="Введите название" title='Назание'/> 
       <br/>
       <br/>
@@ -40,6 +51,7 @@ export default function Home() {
       <br/>
       <br/>
       <MovieCard name={"Властелин колец: Братство кольца"} genre={"Фэнтези"} year={2001} grade={8} director={"Питер Джексон"} text={"Сказания о Средиземье — это хроника Великой войны за Кольцо, длившейся не одну тысячу лет. Тот, кто владел Кольцом, получал неограниченную власть, но был обязан служить злу. Тихая деревня, где живут хоббиты. Придя на 111-й день рождения к своему старому другу Бильбо Бэггинсу, волшебник Гэндальф начинает вести разговор о кольце, которое Бильбо нашел много лет назад. Это кольцо принадлежало когда-то темному властителю Средиземья Саурону, и оно дает большую власть своему обладателю. Теперь Саурон хочет вернуть себе власть над Средиземьем. Бильбо отдает Кольцо племяннику Фродо, чтобы тот отнёс его к Роковой Горе и уничтожил."} picture={'/movie.png'} />
-    </div>
+      <Footer/>
+    </>
   );
 };
