@@ -4,7 +4,6 @@
   border: 0.1rem solid #E1E3E6;
   justify-content: space-between;
   border-radius: 0.8rem;
-  // max-width: 36rem;
   background: #FFFFFF;
   width: 100%;
   padding: 1rem 1.6rem;
@@ -18,7 +17,7 @@
 .input {
   flex-grow:2;
   border:none;
-  height: 4rem;
+  height: 2rem;
   width: 100%;
   
   &::placeholder {
