@@ -1,6 +1,7 @@
 import { FC } from "react";
 import styles from './MovieCard.module.scss';
 import Image from 'next/image'
+import Control from "../control/Control";
 
 interface IMovieCard {
   name: string;
@@ -19,9 +20,7 @@ const MovieCard: FC<IMovieCard> = ({name, genre, year, grade, director, text, pi
       <div className={styles.data}>
         <div className={styles.header}>
           <h2 className={styles.name}>{name}</h2>
-          <div className={styles.control}>
-            .../.../...
-          </div>
+            <Control/>
         </div>
         <div className={styles.info}>
           <h3 className={styles.title}>Жанр: <span className={styles.value}>{genre}</span></h3>
