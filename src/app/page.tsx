@@ -8,13 +8,13 @@ import MovieCard from "@/components/UI/movieCard/MovieCard";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 import Filter from "@/components/filter/Filter";
+import Main from "@/components/main/Main";
 
 export default function Home() {
   return (
-    <>
-      <Header inCart={10} />
+    <div className="container">
       <Filter/>
-      <Footer/>
-    </>
+      <Main/>
+    </div>
   );
 };

@@ -1,4 +1,6 @@
+import Header from '@/components/header/Header'
 import './globals.css'
+import Footer from '@/components/footer/Footer'
 
 export const metadata = {
   title: 'Домашнее задание "Реакт"',
@@ -12,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <body>
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   )
 }
