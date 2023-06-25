@@ -15,7 +15,6 @@ const Header: FC<IHeader> = ({inCart=0}) => {
   const router = useRouter();
   const [cart, setCart] = useState(0)
   store.subscribe(()=>{
-    console.log(store.getState())
     setCart(Object.values(store.getState().cart).reduce((acc, curr) => acc + curr, 0))
   })
   return (
