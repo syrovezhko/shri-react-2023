@@ -1,5 +1,5 @@
 "use client"
-import { FC, useState } from "react";
+import { FC } from "react";
 import styles from './Revue.module.scss';
 import Image from 'next/image'
 
@@ -8,10 +8,10 @@ interface IRevue {
   name: string;
   grade: number;
   text: string;
+  id: string;
 }
 
-const Revue: FC<IRevue> = ({picture='/photo.svg', name, text, grade}) => {
-  const [count, setCount] = useState(0);
+const Revue: FC<IRevue> = ({picture='/photo.svg', name, text, grade, id}) => {
   return (
     <article className={styles.card}>
       <div className={styles.picture}>
