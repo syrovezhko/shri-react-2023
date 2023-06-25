@@ -1,6 +1,7 @@
 import Header from '@/components/header/Header'
 import './globals.css'
 import Footer from '@/components/footer/Footer'
+import { StoreProvider } from '@/redux/StoreProvider'
 
 export const metadata = {
   title: 'Домашнее задание "Реакт"',
@@ -16,7 +17,7 @@ export default function RootLayout({
     <html lang="ru">
       <body>
         <Header/>
-        {children}
+        <StoreProvider>{children}</StoreProvider>
         <Footer/>
       </body>
     </html>

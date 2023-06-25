@@ -29,7 +29,7 @@ const Card: FC<ICard> = ({isCart=false, picture, title, genre, id, key}) => {
             <h3 className={styles.genre} >{dictionary[genre]}</h3>
           </div>
           <div className={styles.control}>
-            <Control/>
+            <Control id={id}/>
             {isCart && <Image onClick={() => setIsOpen(true)} className={styles.close} src="/close.svg" width={20} height={20} alt="close"/>}
           </div>
         </div>
