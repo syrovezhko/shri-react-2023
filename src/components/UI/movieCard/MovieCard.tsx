@@ -23,7 +23,7 @@ const MovieCard: FC<IMovieCard> = ({name, genre, year, grade, director, text, pi
       <div className={styles.data}>
         <div className={styles.header}>
           <h2 className={styles.name}>{name}</h2>
-            <Control/>
+            <Control id={id}/>
         </div>
         <div className={styles.info}>
           <h3 className={styles.title}>Жанр: <span className={styles.value}>{dictionary[genre]}</span></h3>
