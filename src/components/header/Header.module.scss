@@ -14,12 +14,14 @@
   font-size: 3.2rem;
   font-family: 'Roboto';
   font-weight: 700;
+  cursor: pointer;
 }
 
 .cart {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  cursor: pointer;
 }
 
 .value {
