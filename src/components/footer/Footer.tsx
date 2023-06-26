@@ -13,7 +13,7 @@ const Footer: FC<IFooter> = () => {
   return (
     <footer className={styles.footer}>
       <h3 onClick={()=>{pathname !== "/question" && router.push("/question")}} className={styles.text}>Вопросы-ответы</h3>
-      <h3 className={styles.text}>О нас</h3>
+      <h3 onClick={()=>{pathname !== "/about" && router.push("/about")}} className={styles.text}>О нас</h3>
     </footer>
   );
 };
