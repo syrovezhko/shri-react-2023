@@ -1,3 +1,5 @@
+"use client"
+
 import { FC, useEffect, useState } from 'react';
 import styles from './Question.module.scss'
 import Image from 'next/image'

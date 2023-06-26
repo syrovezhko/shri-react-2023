@@ -1,3 +1,5 @@
+"use client"
+
 import { FC, useState } from "react";
 import styles from './Control.module.scss';
 import Button from "../button/Button";

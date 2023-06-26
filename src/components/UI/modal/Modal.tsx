@@ -1,3 +1,5 @@
+"use client"
+
 import { FC } from "react";
 import styles from './Modal.module.scss';
 import Image from "next/image";
