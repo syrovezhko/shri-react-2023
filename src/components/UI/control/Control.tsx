@@ -18,7 +18,7 @@ const Control: FC<IControl> = ({id}) => {
   const dispatch = useDispatch()
   return (
     <div className={styles.control}>
-      <div className={styles.button} onClick={()=> dispatch(cartActions.increment(id))} >
+      <div className={styles.button} onClick={()=> productAmount< 30 && dispatch(cartActions.increment(id))} >
         <Button type={'increase'}/>
       </div>
       <h4 className={styles.value}>{productAmount}</h4>
