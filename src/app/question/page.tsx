@@ -19,6 +19,8 @@ export default async function Questions() {
         <Question
           type={i.type}
           title={i.title}
+          id={i.id}
+          key={i.id}
           text={i.text}/>
         ))}
     </div>

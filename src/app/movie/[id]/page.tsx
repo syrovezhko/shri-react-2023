@@ -27,6 +27,7 @@ export default async function Movie(props: { params: { id: string; }; }) {
           name={review.name}
           text={review.text}
           grade={review.rating}
+          key={review.id}
           id={review.id}/>
       ))}
       

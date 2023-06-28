@@ -9,9 +9,10 @@ interface IRevue {
   grade: number;
   text: string;
   id: string;
+  key: string;
 }
 
-const Revue: FC<IRevue> = ({picture='/photo.svg', name, text, grade, id}) => {
+const Revue: FC<IRevue> = ({picture='/photo.svg', name, text, grade, id, key}) => {
   return (
     <article className={styles.card}>
       <div className={styles.picture}>

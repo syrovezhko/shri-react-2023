@@ -13,6 +13,7 @@ interface IControl {
 }
 
 const Control: FC<IControl> = ({id}) => {
+  //@ts-ignore
   const productAmount = useSelector(state => selectProductAmount(state, id))
   const dispatch = useDispatch()
   return (

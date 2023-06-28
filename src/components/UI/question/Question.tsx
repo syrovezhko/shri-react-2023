@@ -8,9 +8,11 @@ interface IQuestion {
 	type: string;
   title: string;
   text?: string;
+  id: string;
+  key: string;
 }
 
-const Question: FC<IQuestion> = ({type, title, text}) => {
+const Question: FC<IQuestion> = ({type, title, text, id, key}) => {
   const heading = type === 'declaration' ? styles.declaration : styles.question;
   const [isOpen, setIsOpen] = useState(()=>{return false});
   const arrow = isOpen ? styles.active : styles.nonActive;
